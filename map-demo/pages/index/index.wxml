@@ -1,0 +1,18 @@
+<view>
+    <map id="map" 
+        longitude="{{longitude}}" 
+        latitude="{{latitude}}" 
+        scale="18" 
+        controls="{{controls}}" 
+        bindcontroltap="controltap" 
+        markers="{{marker}}" 
+        bindmarkertap="markertap" 
+        polyline="{{polyline}}" 
+        bindregionchange="regionchange" 
+        show-location 
+        style="width: 100%; height: 300px;">
+    </map>
+</view>
+<block wx:for="{{[1,2,3]}}" wx:key="">
+    <button type='default' id="{{index}}" bindtap="buttonTap">按钮{{index}}</button>
+</block>
